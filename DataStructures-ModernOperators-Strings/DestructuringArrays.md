@@ -80,6 +80,8 @@ console.log(i, j, k); // 2 5 6
 
 Default values can be specified for variables that do not have a corresponding array element.
 
+useful when for example we get data from an API and we don't know if the data is complete or not.
+
 ```js
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r); // 8 9 1
