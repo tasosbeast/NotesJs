@@ -76,3 +76,15 @@ specify a default value for a variable that does not have a corresponding proper
 const { menu = [], starterMenu: starters = [] } = restaurant;
 console.log(menu, starters); // [] (4) ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"]
 ```
+
+### mutating variables
+
+```js
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
+
+// By adding the parentheses around the entire assignment, we inform the JavaScript interpreter that we are not defining a block of code but rather assigning a value.
+({ a, b } = obj);
+console.log(a, b); // 23 7
+```
