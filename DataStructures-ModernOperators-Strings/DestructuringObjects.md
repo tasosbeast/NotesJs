@@ -33,6 +33,7 @@ const restaurant = {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
 };
+
 // need to use the same name as the property
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories); /// Classico Italiano {thu: {…}, fri: {…}, sat: {…}} (4) ["Italian", "Pizzeria", "Vegetarian", "Organic"]
