@@ -88,3 +88,32 @@ const obj = { a: 23, b: 7, c: 14 };
 ({ a, b } = obj);
 console.log(a, b); // 23 7
 ```
+
+### nested objects
+
+```js
+const {
+  fri: { open: o, close: c },
+} = openingHours;
+console.log(o, c); // 11 23
+```
+
+### object as a function parameter
+
+```js
+const add = function ({ a, b }) {
+  return a + b;
+};
+
+console.log(add({ a: 2, b: 3 })); // 5
+```
+
+### default values for function parameters
+
+```js
+const add = function ({ a, b, c = 1 }) {
+  return a + b + c;
+};
+
+console.log(add({ a: 2, b: 3 })); // 6
+```
