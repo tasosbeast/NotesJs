@@ -67,5 +67,3 @@ console.log(restaurantName, hours, tags); // Classico Italiano {thu: {…}, fri:
 The provided JavaScript snippet demonstrates the concept of object destructuring with a renaming syntax. This is a feature in ES6 that allows you to unpack values from objects or arrays into distinct variables.
 
 In the given code, an object named `restaurant` is being destructured into three new variables: `restaurantName`, `hours`, and `tags`. The syntax `{name: restaurantName}` means "extract the property `name` from the object and assign it to a new variable called `restaurantName`". The same is done for `openingHours` and `categories`, which are assigned to `hours` and `tags` respectively.
-
-The `console.log` statement then prints the values of these new variables. The output suggests that `restaurantName` is a string ("Classico Italiano"), `hours` is an object with properties for different days, and `tags` is an array of strings representing the categories of the restaurant.
