@@ -52,3 +52,20 @@ console.log(name, openingHours, categories); /// Classico Italiano {thu: {…}, 
 7. **Combining Destructuring with Spread Operator:** Destructuring can be combined with the spread operator to extract specific properties or reorder them.
 
 Remember, object destructuring is a valuable tool for simplifying your JavaScript code and accessing data from objects more effectively.
+
+### different name
+
+```js
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+} = restaurant;
+console.log(restaurantName, hours, tags); // Classico Italiano {thu: {…}, fri: {…}, sat: {…}} (4) ["Italian", "Pizzeria", "Vegetarian", "Organic"]
+```
+
+The provided JavaScript snippet demonstrates the concept of object destructuring with a renaming syntax. This is a feature in ES6 that allows you to unpack values from objects or arrays into distinct variables.
+
+In the given code, an object named `restaurant` is being destructured into three new variables: `restaurantName`, `hours`, and `tags`. The syntax `{name: restaurantName}` means "extract the property `name` from the object and assign it to a new variable called `restaurantName`". The same is done for `openingHours` and `categories`, which are assigned to `hours` and `tags` respectively.
+
+The `console.log` statement then prints the values of these new variables. The output suggests that `restaurantName` is a string ("Classico Italiano"), `hours` is an object with properties for different days, and `tags` is an array of strings representing the categories of the restaurant.
