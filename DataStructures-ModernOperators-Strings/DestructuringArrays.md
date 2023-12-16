@@ -26,3 +26,16 @@ Destructuring arrays is a great way to switch the values of two variables withou
 ```js
 [first, second] = [second, first];
 ```
+
+### Nested destructuring
+
+Destructuring arrays can be nested to extract data from nested arrays.
+
+```js
+const nested = [2, 4, [5, 6]];
+const [i, , j] = nested;
+console.log(i, j); // 2 [5, 6]
+
+const [i, , [j, k]] = nested;
+console.log(i, j, k); // 2 5 6
+```
