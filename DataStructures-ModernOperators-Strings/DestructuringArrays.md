@@ -18,3 +18,11 @@ const [first, , second] = restaurant.categories;
 ```
 
 4. **Destructuring Embraces Nested Structures:** Array destructuring extends to nested arrays and objects, enabling efficient extraction of data from intricate data structures.
+
+### Switching Variables
+
+Destructuring arrays is a great way to switch the values of two variables without the need for a temporary variable.
+
+```js
+[first, second] = [second, first];
+```
