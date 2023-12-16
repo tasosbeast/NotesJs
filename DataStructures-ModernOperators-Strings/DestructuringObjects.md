@@ -6,6 +6,38 @@ Here are some key points to keep in mind when using object destructuring:
 
 1. **Square Braces Denote Destructuring:** Object destructuring is initiated and concluded using curly braces `{}`.
 
+```js
+const restaurant = {
+  name: "Classico Italiano",
+  location: "Via Angelo Tavanti 23, Firenze, Italy",
+  categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+  mainMenu: ["Pizza", "Pasta", "Risotto"],
+
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
+
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+};
+
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories); /// Classico Italiano {thu: {…}, fri: {…}, sat: {…}} (4) ["Italian", "Pizzeria", "Vegetarian", "Organic"]
+```
+
 2. **Variable Names Correspond to Property Names:** Specify the names of the variables you want to extract, aligning them with the names of the corresponding object properties.
 
 3. **Destructuring Single Properties:** You can extract a single property by placing its name inside square brackets `[]` within the curly braces `{}`.
