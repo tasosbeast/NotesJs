@@ -13,4 +13,6 @@ To effectively utilize array destructuring in your JavaScript code, memorize the
 ```js
 const arr = [1, 2, 3, 4, 5, 6, 7, 8];
 const [x, y, z] = arr;
+
+const [first, second] = restaurant.categories;
 ```
