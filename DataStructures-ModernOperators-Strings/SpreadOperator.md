@@ -1,4 +1,3 @@
-````markdown
 # Spread Operator in JavaScript
 
 The spread operator (`...`) in JavaScript is a powerful feature used for:
@@ -6,11 +5,11 @@ The spread operator (`...`) in JavaScript is a powerful feature used for:
 ## 1. Array Manipulation
 
 - **Copying Arrays:** Easily creates copies of arrays without modifying the original.
+
   ```javascript
   const originalArray = [1, 2, 3];
   const copyArray = [...originalArray];
   ```
-````
 
 - **Concatenating Arrays:** Combines arrays without mutating them.
 
@@ -64,8 +63,3 @@ The spread operator (`...`) in JavaScript is a powerful feature used for:
 - The spread operator only performs a shallow copy for objects, meaning it copies references to nested objects rather than creating distinct copies.
 
 The spread operator is a versatile tool that simplifies array and object manipulation in JavaScript.
-
-```
-
-Now, this content is ready for direct copy-pasting into your Markdown file.
-```
