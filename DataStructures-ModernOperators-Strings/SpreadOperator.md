@@ -63,3 +63,6 @@ The spread operator (`...`) in JavaScript is a powerful feature used for:
 - The spread operator only performs a shallow copy for objects, meaning it copies references to nested objects rather than creating distinct copies.
 
 The spread operator is a versatile tool that simplifies array and object manipulation in JavaScript.
+
+- works on all iterables (arrays, strings, maps, sets, etc.)
+- can be used on both arrays and objects
